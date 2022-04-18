@@ -1,0 +1,5 @@
+.ticket__invalidate{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}

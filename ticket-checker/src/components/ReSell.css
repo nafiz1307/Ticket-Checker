@@ -1,0 +1,5 @@
+.ticket__reSell{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}

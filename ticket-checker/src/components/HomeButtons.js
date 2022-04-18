@@ -1,5 +1,4 @@
 import React from 'react'
-import Button from "@mui/material/Button";
 import "./HomeButtons.css"
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
@@ -29,31 +28,34 @@ const HomeButtons = () => {
           </CardActionArea>
         </Card>
       </Link>{" "}
-      {" "}
-      <Card sx={{ maxWidth: 345 }}>
-        <CardActionArea>
-          <CardContent className="Card__Content">
-            <Typography gutterBottom variant="h5" component="div">
-              Resell Ticket
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Resell a pre owned ticket
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-      </Card>
-      <Card sx={{ maxWidth: 345 }}>
-        <CardActionArea>
-          <CardContent className="Card__Content">
-            <Typography gutterBottom variant="h5" component="div">
-              Invalidate Ticket
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Invalidate an used Ticket
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-      </Card>
+      <Link to="/resell">
+        <Card sx={{ maxWidth: 345 }}>
+          <CardActionArea>
+            <CardContent className="Card__Content">
+              <Typography gutterBottom variant="h5" component="div">
+                Resell Ticket
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Resell a pre owned ticket
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+        </Card>
+      </Link>
+      <Link to="/invalidate">
+        <Card sx={{ maxWidth: 345 }}>
+          <CardActionArea>
+            <CardContent className="Card__Content">
+              <Typography gutterBottom variant="h5" component="div">
+                Invalidate Ticket
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Invalidate an used Ticket
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+        </Card>
+      </Link>
       <Card sx={{ maxWidth: 345 }}>
         <CardActionArea>
           <CardContent className="Card__Content">

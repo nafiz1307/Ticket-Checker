@@ -1,0 +1,17 @@
+.page__header{
+    text-align: center;
+}
+
+.page__content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.ticket__cell{
+    padding: 10px;
+}

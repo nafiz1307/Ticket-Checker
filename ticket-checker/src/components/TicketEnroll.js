@@ -19,6 +19,9 @@ const TicketEnroll = () => {
           },
         }}
       >
+        <div className="page__header">
+          <h1>Enroll Ticket</h1>
+        </div>
         <div className="ticket__enroll">
           <TextField id="standard-basic" label="Name" variant="standard" />
           <TextField
@@ -38,7 +41,7 @@ const TicketEnroll = () => {
           />
           <TextField id="standard-basic" label="Signature" variant="standard" />
         </div>
-        <Button variant="contained" size="large">
+        <Button variant="contained" size="large" color="success">
           Enroll
         </Button>
       </Box>
