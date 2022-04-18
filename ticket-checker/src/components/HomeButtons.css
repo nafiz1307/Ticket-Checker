@@ -1,3 +1,14 @@
-.button__group{
-    margin-top: 10%;
+.card__group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 15%;
+    margin-left: 25%;
+    margin-right: 15%;
+    padding: 50px;
+}
+
+.Card__Content{
+    background-color: rgba(245, 153, 99, 0.986);
 }

@@ -1,14 +1,18 @@
 
-import './App.css';
-import Navbar from './components/Navbar';
-import HomeButtons from './components/HomeButtons';
+import { Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
+import HomePage from './pages/HomePage';
+import TicketEnrollPage from "./pages/TicketEnrollPage";
+
 
 function App() {
   return (
-    <div >
-      <Navbar/>
-      <HomeButtons/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="enroll" element={<TicketEnrollPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

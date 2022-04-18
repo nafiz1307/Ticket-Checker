@@ -1,32 +1,71 @@
 import React from 'react'
 import Button from "@mui/material/Button";
-import Box from "@mui/material/Box";
-import ButtonGroup from "@mui/material/ButtonGroup";
 import "./HomeButtons.css"
-
-const buttons = [
-  <Button key="one">Enroll Ticket</Button>,
-  <Button key="two">Resell Ticket</Button>,
-  <Button key="three">Invalidate Ticket</Button>,
-];
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography";
+import { CardActionArea } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const HomeButtons = () => {
   return (
-    <div className="button__group">
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          "& > *": {
-            m: 1,
-          },
-        }}
-      >
-        <ButtonGroup color="secondary" size="large" orientation="vertical">
-          {buttons}
-        </ButtonGroup>
-      </Box>
+    <div className="card__group">
+      <Link to="/enroll">
+        <Card sx={{ maxWidth: 345 }}>
+          <CardActionArea>
+            <CardContent className="Card__Content">
+              <Typography
+                gutterBottom
+                variant="h5"
+                component="div"
+                align="center"
+              >
+                Enroll Ticket
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Enroll a new Ticket
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+        </Card>
+      </Link>{" "}
+      {" "}
+      <Card sx={{ maxWidth: 345 }}>
+        <CardActionArea>
+          <CardContent className="Card__Content">
+            <Typography gutterBottom variant="h5" component="div">
+              Resell Ticket
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Resell a pre owned ticket
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+      </Card>
+      <Card sx={{ maxWidth: 345 }}>
+        <CardActionArea>
+          <CardContent className="Card__Content">
+            <Typography gutterBottom variant="h5" component="div">
+              Invalidate Ticket
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Invalidate an used Ticket
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+      </Card>
+      <Card sx={{ maxWidth: 345 }}>
+        <CardActionArea>
+          <CardContent className="Card__Content">
+            <Typography gutterBottom variant="h5" component="div">
+              Available Tickets
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Show Available Tickets
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+      </Card>
     </div>
   );
 };

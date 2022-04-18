@@ -1,0 +1,5 @@
+.ticket__enroll{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
