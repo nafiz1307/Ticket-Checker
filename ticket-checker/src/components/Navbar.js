@@ -45,9 +45,11 @@ const Navbar = () => {
               </Button>
             </Link>
 
-            <Button sx={{ my: 2, color: "white", display: "block" }}>
-              All Ticket
-            </Button>
+            <Link to="/view-all">
+              <Button sx={{ my: 2, color: "white", display: "block" }}>
+                All Ticket
+              </Button>
+            </Link>
           </Box>
         </Toolbar>
       </Container>

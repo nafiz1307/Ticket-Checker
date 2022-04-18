@@ -56,18 +56,20 @@ const HomeButtons = () => {
           </CardActionArea>
         </Card>
       </Link>
-      <Card sx={{ maxWidth: 345 }}>
-        <CardActionArea>
-          <CardContent className="Card__Content">
-            <Typography gutterBottom variant="h5" component="div">
-              Available Tickets
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Show Available Tickets
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-      </Card>
+      <Link to="/view-all">
+        <Card sx={{ maxWidth: 345 }}>
+          <CardActionArea>
+            <CardContent className="Card__Content">
+              <Typography gutterBottom variant="h5" component="div">
+                Available Tickets
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Show Available Tickets
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+        </Card>
+      </Link>
     </div>
   );
 };
